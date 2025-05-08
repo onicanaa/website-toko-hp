@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko HP Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+</style>
+    </style>
+</head>
+
+<body class="bg-gray-100 p-6 relative">
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop>
+        <source src="matrix-raining-particles.1920x1080.mp4" type="video/mp4">
+    </video>
+
+<!-- Navbar -->
+<nav class="navbar flex items-center justify-between px-8 py-4 fixed top-0 w-full bg-opacity-50 backdrop-blur z-20">
+    <div class="flex items-center gap-3">
+        <img src="foto5.png" alt="Logo" class="h-10 w-10 object-contain rounded-full border-2 border-white shadow-md">
+        <span class="text-xl font-bold text-white tracking-wide">Toko Online</span>
+    </div>
+</nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section flex items-center justify-center h-screen bg--to-r from-indigo-600  text-white text-center py-16">
+        <div class="max-w-2xl">
+            <h1 class="text-4xl font-bold mb-4">Selamat Datang di Toko HP Online store</h1>
+            <p class="text-lg">Temukan berbagai pilihan HP dengan harga terbaik.</p>
+            <a href="products.html" class="mt-6 inline-block px-6 py-3 text-lg font-semibold bg-blue-600 rounded-full hover:bg-blue-500 transition duration-300">Produk HP</a>
+            <a href="pesan.html" class="mt-6 inline-block px-6 py-3 text-lg font-semibold bg-blue-600 rounded-full hover:bg-blue-500 transition duration-300">Pesan HP</a>
+        </div>
+    </section>
+
+    <!-- Informasi Tambahan -->
+<section class="relative z-10 bg-black bg-opacity-60 text-white py-16 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+            <img src="https://png.pngtree.com/png-vector/20220723/ourmid/pngtree-banner-spesial-gratis-ongkir-biru-kuning-belanja-online-promo-png-vektor-png-image_6040320.png">
+            <h3 class="text-2xl font-semibold mb-2">Gratis Ongkir</h3>
+            <p>Kami memberikan gratis ongkir ke seluruh Indonesia untuk pembelian tertentu.</p>
+        </div>
+        <div>
+            <img src="http://www.greenfog.id/img/garansi.png">
+            <h3 class="text-2xl font-semibold mb-2">Garansi Resmi</h3>
+            <p>Semua produk kami bergaransi resmi dari pabrikan dengan layanan purna jual.</p>
+        </div>
+        <div>
+            <img src="https://png.pngtree.com/png-vector/20230624/ourlarge/pngtree-24-hour-service-label-3d-design-vector-png-image_7316260.png"> 
+            <h3 class="text-2xl font-semibold mb-2">Layanan 24/7</h3>
+            <p>Tim kami siap membantu Anda kapan pun Anda butuh bantuan.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="relative z-10 bg-gray-900 text-white py-8 text-center">
+    <p class="text-sm">&copy; 2025 Toko HP Online. Semua Hak Dilindungi.</p>
+</footer>

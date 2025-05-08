@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengiriman Produk</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="email"], input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input[type="text"], .form-group input[type="email"] {
+            font-size: 16px;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            font-size: 18px;
+            padding: 14px;
+            background-color: #007bff;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Tambahan tombol kembali */
+        .btn-kembali {
+            display: block;
+            text-align: center;
+            background-color: #6c757d;
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .btn-kembali:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop class="background-video">
+    <source src="matrix-raining-particles.1920x1080.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+    <h2>Pengiriman Produk</h2>
+
+    <form id="formPengiriman" method="POST">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="nama_produk">Nama Produk:</label>
+            <input type="text" id="nama_produk" name="nama_produk" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="nomor_telpon">Nomor Telepon:</label>
+            <input type="text" id="nomor_telpon" name="nomor_telpon" required>
+        </div>
+    
+        <div class="form-group">
+            <input type="submit" value="Kirim">
+        </div>
+    </form>
+    
+    <!-- Pesan sukses -->
+    <p id="status-pesanan" style="text-align:center; color:green; font-weight:bold; display:none;">
+        Pesanan berhasil diproses.
+    </p>
+    
+
+    <!-- Tombol kembali ke halaman utama -->
+    <a href="index.html" class="btn-kembali">Kembali ke Halaman Utama</a>
+</div>
+
+</body>
+</html>
